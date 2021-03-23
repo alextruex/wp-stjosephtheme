@@ -1,0 +1,28 @@
+{
+  "name": "wptheme-stjoseph",
+  "version": "3.1.0",
+  "description": "Wordpress theme for St Joseph",
+  "main": "scripts/start.mjs",
+  "scripts": {
+    "start": "node --experimental-modules scripts/start.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.0",
+    "css-loader": "^3.6.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.2.1",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.2"
+  }
+}
