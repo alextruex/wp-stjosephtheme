@@ -17,7 +17,7 @@ get_header();
 ?>
 
 <div class="st-joseph__main">
-	<main id="main" class="container py-5">
+	<main id="main" class="container">
 		<div class="row">
 			<div class="col-lg-8">
 
@@ -37,7 +37,7 @@ get_header();
 			?>
 
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 st-joseph__main-sidebar">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

@@ -1,28 +1,20 @@
 {
-  "name": "wptheme-stjoseph",
-  "version": "3.1.0",
-  "description": "Wordpress theme for St Joseph",
-  "main": "scripts/start.mjs",
+  "name": "wp-stjosephtheme",
+  "version": "4.0.0",
+  "description": "St Joseph Wordpress Theme",
+  "main": "main.js",
   "scripts": {
-    "start": "node --experimental-modules scripts/start.mjs"
+    "start": "sass sass/index.scss style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextruex/wp-stjosephtheme.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "bootstrap": "^4.5.0",
-    "css-loader": "^3.6.0",
-    "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
-    "popper.js": "^1.16.1",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^1.2.1",
-    "url-loader": "^2.3.0",
-    "webpack": "^4.43.0"
+  "bugs": {
+    "url": "https://github.com/alextruex/wp-stjosephtheme/issues"
   },
-  "devDependencies": {
-    "mini-css-extract-plugin": "^0.8.2"
-  }
+  "homepage": "https://github.com/alextruex/wp-stjosephtheme#readme"
 }

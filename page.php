@@ -17,7 +17,7 @@ get_header();
 ?>
 
 <div class="st-joseph__main">
-<main id="main" class="container py-5">
+<main id="main" class="container">
 	<div class="row">
 		<div class="col-12">
 

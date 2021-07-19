@@ -13,7 +13,7 @@
 ?>
 
 <div class="st-joseph__footer">
-	<div class="container py-5">
+	<div class="container">
 		<footer id="colophon" class="blog-footer">
 			<div class="secondary-menu">
 				<?php
