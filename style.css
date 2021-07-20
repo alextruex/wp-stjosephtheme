@@ -5,7 +5,7 @@ Author: Alex Truex
 Author URI: https://github.com/alextruex/
 Description: Custom theme for St. Joseph
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 4.0
+Version: 4.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wp-stjosephtheme
@@ -23,6 +23,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
   height: auto;
 }
 
+@media (max-width: 991px) {
+  .st-joseph__header .custom-logo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+  }
+}
 .st-joseph__nav {
   background-color: #213768;
   border-bottom: 4px solid #e2a31a;
@@ -73,6 +80,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+@media (max-width: 991px) {
+  .navbar-nav > .menu-item {
+    border: none !important;
+  }
+}
 .st-joseph__main {
   margin-top: 30px;
 }
@@ -130,10 +142,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .st-joseph__main .widget-area {
   font-family: "Lato", "Tahoma", "sans-serif";
 }
-.st-joseph__main .entry-content iframe {
-  width: 100%;
-  border: none;
-}
 .st-joseph__main .blog-post {
   font-family: "Libre Baskerville", "Georgia", "serif";
   border-bottom: 1px solid #39548a;
@@ -163,10 +171,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin: 40px 0px 20px 0px;
   color: #213768;
 }
-.st-joseph__main .entry-content img {
-  width: 100%;
-  height: auto;
-}
 .st-joseph__main .entry-title {
   color: #213768;
   font-family: "Libre Baskerville", "Georgia", "serif";
@@ -190,6 +194,61 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .st-joseph__main .posts-navigation {
   margin-bottom: 40px;
+}
+.st-joseph__main .entry-content img {
+  width: 100%;
+  height: auto;
+}
+.st-joseph__main iframe {
+  border: none;
+}
+@media (min-width: 0px) {
+  .st-joseph__main .wp-embed-aspect-16-9 iframe {
+    width: 100%;
+  }
+  .st-joseph__main .entry-content > figure > iframe {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .st-joseph__main .wp-embed-aspect-16-9 iframe {
+    width: 510px;
+    height: 286px;
+  }
+  .st-joseph__main .entry-content > figure > iframe {
+    width: 510px;
+    height: 397px;
+  }
+}
+@media (min-width: 768px) {
+  .st-joseph__main .wp-embed-aspect-16-9 iframe {
+    width: 690px;
+    height: 388px;
+  }
+  .st-joseph__main .entry-content > figure > iframe {
+    width: 690px;
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .st-joseph__main .wp-embed-aspect-16-9 iframe {
+    width: 930px;
+    height: 510px;
+  }
+  .st-joseph__main .entry-content > figure > iframe {
+    width: 560px;
+    height: 425px;
+  }
+}
+@media (min-width: 1200px) {
+  .st-joseph__main .wp-embed-aspect-16-9 iframe {
+    width: 1110px;
+    height: 624px;
+  }
+  .st-joseph__main .entry-content > figure > iframe {
+    width: 730px;
+    height: 522px;
+  }
 }
 
 .st-joseph__footer {

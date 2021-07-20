@@ -67,11 +67,6 @@
         font-family:$sans;
     }
 
-    .entry-content iframe{
-        width:100%;
-        border:none;
-    }
-
     .blog-post{
         font-family:$serif;
         border-bottom:1px solid $primary-light;
@@ -109,11 +104,6 @@
         }
     }
 
-    .entry-content img{
-        width:100%;
-        height:auto;
-    }
-
     .entry-title{
         color:$primary;
         font-family:$serif;
@@ -144,5 +134,83 @@
 
     .posts-navigation{
         margin-bottom:40px;
+    }
+
+
+    .entry-content img{
+        width:100%;
+        height:auto;
+    }
+
+    iframe{
+        border:none;
+    }
+
+    
+
+    //.7571
+
+    // Small devices (landscape phones, 576px and up)
+    
+    @media (min-width: 0px) { 
+        .wp-embed-aspect-16-9 iframe{
+            width:100%;
+        }
+
+        .entry-content > figure > iframe {
+            width:100%;
+        }
+    }
+    
+    @media (min-width: 576px) { 
+        .wp-embed-aspect-16-9 iframe{
+            width:510px;
+            height:286px;
+        }
+
+        .entry-content > figure > iframe {
+            width:510px;
+            height:397px;
+        }
+    }
+
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .wp-embed-aspect-16-9 iframe{
+            width:690px;
+            height:388px;
+        }
+
+        .entry-content > figure > iframe {
+            width:690px;
+            height:500px;
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .wp-embed-aspect-16-9 iframe{
+            width:930px;
+            height:510px;
+        }
+
+        .entry-content > figure > iframe {
+            width:560px;
+            height:425px;
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .wp-embed-aspect-16-9 iframe{
+            width:1110px;
+            height:624px;
+        }
+
+        .entry-content > figure > iframe {
+            width:730px;
+            height:522px;
+        }
     }
 }

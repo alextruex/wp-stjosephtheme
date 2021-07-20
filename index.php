@@ -18,7 +18,7 @@ get_header();
 
 	<main id="main" class="st-joseph__main container">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-8 order-2 order-lg-1">
 				<?php 
 					if ( have_posts() ) {
 					/* Start the Loop */
@@ -32,7 +32,7 @@ get_header();
 					}
 				?>
 			</div>
-			<div class="col-lg-4 st-joseph__main-sidebar">
+			<div class="col-lg-4 order-1 order-lg-2 st-joseph__main-sidebar">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
