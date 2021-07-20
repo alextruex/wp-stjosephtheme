@@ -1,0 +1,61 @@
+/// St. Joseph Theme - Navigation Styles
+
+.st-joseph__nav{
+    background-color:$primary;
+    border-bottom:4px solid $secondary;
+    padding:0px !important;
+
+    .navbar-nav{
+        margin:auto;
+    }
+
+    .navbar-nav > .menu-item{
+        border-right:1px solid $primary-light;
+    }
+
+    .navbar-nav > .menu-item:hover{
+        background-color:$primary-light;
+    }
+
+    .navbar-nav > .menu-item:first-child{
+        border-left:1px solid $primary-light;
+    }
+
+    .navbar-nav > .menu-item > a{
+        padding:16px 8px;
+        display:block;
+        height:100%;
+        color:white;
+        font-family:$sans;
+        text-transform: uppercase;
+    }
+
+    .dropdown-menu{
+        background-color:$primary-dark;
+        border-radius:0px;
+        border:none;
+    }
+
+    .dropdown-item{
+        padding:8px 12px;
+        display:block;
+        height:100%;
+        color:white;
+        font-family:$sans;
+        text-transform: uppercase;
+    }
+
+    .dropdown-item:hover{
+        background-color:$primary;
+        color:white;
+    }
+    
+    .navbar-toggler{
+        height:64px;
+        width:64px;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+}

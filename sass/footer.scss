@@ -1,0 +1,54 @@
+/// St. Joseph Theme - Footer Styles
+
+.st-joseph__footer{
+    background-color:$primary;
+    border-top:4px solid $secondary;
+    font-family:$sans;
+
+    .secondary-menu{
+        margin-top:20px;
+    }
+
+    .secondary-menu > div > ul > li{
+        display:inline-block;
+    }
+
+    .secondary-menu ul{
+        list-style: none;
+        padding-left:0px;
+    }
+
+    .secondary-menu ul li a{
+        color:white;
+    }
+
+    .secondary-menu > div > ul > li {
+        margin:40px;
+        vertical-align: top;
+    }
+
+    .secondary-menu > div > ul > li > a{
+        border-bottom:1px dotted white;
+        text-transform: uppercase;
+        font-weight:500;
+    }
+
+    .secondary-menu > div > ul > li > ul > li {
+        margin-top:2px;
+    }
+
+    .secondary-menu > div > ul > li > ul > li > a{
+        font-weight:100;
+    }
+
+    .secondary-menu a:hover{
+        text-decoration: none;
+    }
+
+    .site-info{
+        padding:20px;
+        color:white;
+        font-family:$sans;
+        border-top:1px solid $primary-light;
+    }
+}

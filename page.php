@@ -16,12 +16,9 @@
 get_header();
 ?>
 
-<div class="st-joseph__main">
-<main id="main" class="container">
+<main id="main" class="st-joseph__main container">
 	<div class="row">
 		<div class="col-12">
-
-
 
 			<?php
 			while (have_posts()) :
@@ -40,7 +37,6 @@ get_header();
 		</div>
 	</div>
 </main><!-- #main -->
-</div>
 
 
 <?php

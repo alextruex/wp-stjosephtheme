@@ -16,36 +16,27 @@
 get_header();
 ?>
 
-<div class="st-joseph__main">
-	<main id="main" class="container">
+	<main id="main" class="st-joseph__main container">
 		<div class="row">
 			<div class="col-lg-8">
-
-			<?php 
-			
-			if ( have_posts() ) {
-			/* Start the Loop */
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'template-parts/content' );
-				}
-				the_posts_navigation();
-			} else {
-				get_template_part( 'template-parts/content', 'none' );
-			}
-
-			?>
-
+				<?php 
+					if ( have_posts() ) {
+					/* Start the Loop */
+						while ( have_posts() ) {
+							the_post();
+							get_template_part( 'template-parts/content' );
+						}
+						the_posts_navigation();
+					} else {
+						get_template_part( 'template-parts/content', 'none' );
+					}
+				?>
 			</div>
 			<div class="col-lg-4 st-joseph__main-sidebar">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
 	</main><!-- #main -->
-</div>
-
-
-
 
 <?php
 get_footer();

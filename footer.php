@@ -12,32 +12,29 @@
 
 ?>
 
-<div class="st-joseph__footer">
+<footer id="colophon" class="st-joseph__footer blog-footer">
 	<div class="container">
-		<footer id="colophon" class="blog-footer">
-			<div class="secondary-menu">
-				<?php
+		<div class="secondary-menu">
+			<?php
 				wp_nav_menu(array(
 					'theme_location'	=> 'secondary'
 				));
+			?>
+		</div>
+		<div class="site-info">
+			<p>St. Joseph website version
+				<?php
+					$data = file_get_contents(__DIR__ . '/package.json');
+					$json = json_decode($data, true);
+					echo $json['version'];
 				?>
-			</div>
-			<div class="site-info">
-				<p>St. Joseph website version
-					<?php
-						$data = file_get_contents(__DIR__ . '/package.json');
-						$json = json_decode($data, true);
-						echo $json['version'];
-					?>
-				| Powered by Wordpress</p>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
+			| Powered by Wordpress</p>
+		</div><!-- .site-info -->
 	</div>
-</div>
+</footer>
 
 <?php wp_footer(); ?>
 
-</div>
 </body>
 
 </html>

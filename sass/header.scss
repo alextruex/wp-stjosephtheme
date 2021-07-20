@@ -1,0 +1,11 @@
+/// St. Joseph Theme - Header Styles
+
+.st-joseph__header{
+    background-color:$primary-dark;
+    text-align:center;
+
+    .custom-logo{
+        width:80%;
+        height:auto;
+    }
+}

@@ -23,32 +23,34 @@ get_header();
 				<header class="entry-header">
 					<h1 class="entry-title">Search results</h1>
 				</header>
-				<?php
-				if (have_posts()) :
+				<div class="entry-content">
+					<?php
+					if (have_posts()) :
 
-					if (is_home() && !is_front_page()) :
-				?>
-						<header>
-							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-						</header>
-				<?php
+						if (is_home() && !is_front_page()) :
+					?>
+							<header>
+								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+							</header>
+							
+					<?php
+						endif;
+
+						/* Start the Loop */
+						while (have_posts()) {
+							the_post();
+							get_template_part('template-parts/content-search');
+						}
+
+						the_posts_navigation();
+
+					else :
+
+						get_template_part('template-parts/content-search', 'none');
+
 					endif;
-
-					/* Start the Loop */
-					while (have_posts()) {
-						the_post();
-						get_template_part('template-parts/content-search');
-					}
-
-					the_posts_navigation();
-
-				else :
-
-					get_template_part('template-parts/content-search', 'none');
-
-				endif;
-				?>
-
+					?>
+				</div>
 			</div>
 		</div>
 	</main><!-- #main -->

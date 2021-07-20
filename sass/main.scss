@@ -1,0 +1,148 @@
+.st-joseph__main{
+
+    .screen-reader-text{
+        display:none;
+    }
+
+    margin-top:30px;
+
+    a{
+        color:$primary;
+        text-decoration: underline;
+    }
+
+    a:hover{
+        color:$primary;
+        text-decoration: underline;
+    }
+
+    .widget-title{
+        border:1px solid $primary;
+        font-family:$sans;
+        color:$primary;
+        text-align:center;
+        text-transform: uppercase;
+        font-size:16px;
+        padding:8px;
+        letter-spacing: 2px;
+    }
+
+    .search-form .screen-reader-text{
+        display:none;
+    }
+
+    .search-form > label{
+        width:68%;
+    }
+
+    .search-field{
+        width:100%;
+        margin:0px;
+        padding:8px;
+        border-radius:4px;
+        
+    }
+
+    .search-submit{
+        margin:0px;
+        width:30%;
+        position:relative;
+        top:-2px;
+        background-color:$primary;
+        color:white;
+        text-transform: uppercase;
+        font-family:$sans;
+        border-radius:4px;
+        border:none;
+        border-bottom:4px solid $primary-dark;
+        padding:8px;
+    }
+
+    .widget_search{
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .widget-area{
+        font-family:$sans;
+    }
+
+    .entry-content iframe{
+        width:100%;
+        border:none;
+    }
+
+    .blog-post{
+        font-family:$serif;
+        border-bottom:1px solid $primary-light;
+        margin-bottom:40px;
+    }
+
+    .blog-post-title a{
+        color:$primary;
+        text-decoration:none;
+    }
+
+    .entry-meta, .entry-footer{
+        font-family:$sans;
+        font-style: italic;
+        color:$primary;
+        text-transform:uppercase;
+        font-size:14px;
+    }
+
+    .entry-meta a{
+        text-decoration:underline;
+        color:$primary;
+    }
+
+    .entry-content{
+        font-family:$serif;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    .entry-content{
+        h1, h2, h3, h4, h5, h6{
+            margin:40px 0px 20px 0px;
+            color:$primary;
+        }
+    }
+
+    .entry-content img{
+        width:100%;
+        height:auto;
+    }
+
+    .entry-title{
+        color:$primary;
+        font-family:$serif;
+    }
+
+    .entry-footer{
+        margin:20px 0px;
+    }
+
+    .entry-footer > span{
+        display:block;
+    }
+
+    .wp-block-file{
+        margin:20px;
+    }
+
+    .wp-block-file__button{
+        
+        margin:20px;
+    }
+
+    hr{
+        margin:40px 0px;
+        color:$primary;
+        background-color:$primary;
+    }
+
+    .posts-navigation{
+        margin-bottom:40px;
+    }
+}
