@@ -69,7 +69,7 @@
 
     .blog-post{
         font-family:$serif;
-        border-bottom:1px solid $primary-light;
+        border-bottom:4px solid $secondary;
         margin-bottom:40px;
     }
 
@@ -128,8 +128,9 @@
 
     hr{
         margin:40px 0px;
-        color:$primary;
-        background-color:$primary;
+        color:$secondary;
+        background-color:$secondary;
+        height:4px;
     }
 
     .posts-navigation{

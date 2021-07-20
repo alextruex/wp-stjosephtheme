@@ -144,7 +144,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .st-joseph__main .blog-post {
   font-family: "Libre Baskerville", "Georgia", "serif";
-  border-bottom: 1px solid #39548a;
+  border-bottom: 4px solid #e2a31a;
   margin-bottom: 40px;
 }
 .st-joseph__main .blog-post-title a {
@@ -189,8 +189,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .st-joseph__main hr {
   margin: 40px 0px;
-  color: #213768;
-  background-color: #213768;
+  color: #e2a31a;
+  background-color: #e2a31a;
+  height: 4px;
 }
 .st-joseph__main .posts-navigation {
   margin-bottom: 40px;
